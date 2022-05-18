@@ -1,0 +1,268 @@
+.body{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+
+    &__item{
+        background-color: white;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    &__list{
+
+        &-item{
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 3rem 4rem;
+            flex-direction: row;
+            border-bottom: 1px solid $primary-color;
+            border-top: 1px solid $primary-color;
+
+            &-left{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            
+            &-image{
+                width: 6rem;
+                margin-right: 2rem;
+                clip-path: circle(43% at 50% 50%);
+            }
+
+            &-text{
+
+                h1{
+                    font-size: 3rem;
+                    background: $primary-linear-color;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                    color: rgba(black, .7);
+                }
+            }
+
+            &-icon{
+                width: 3rem;
+                fill: $secondry-color;
+                background-image: $primary-linear-color;
+                height: 3rem;
+                padding: .5rem;
+                border-radius: 10rem;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                -o-border-radius: 10rem;
+                justify-self: flex-end;
+            }
+        }
+    }
+
+    &__pagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 10rem;
+
+        &-prev, &-next{
+            background-color: $secondry-color;
+            color: $thrid-color;
+            border: 1px solid $thrid-color;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+        }
+    }
+
+    &__recipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        &-imageContainer{
+            overflow: hidden;
+            height: 40rem;
+        }
+
+        &-overlay{
+            height: 40rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-image: $primary-linear-color-2;
+        }
+
+        &-image{
+            width: 100%;
+            transform: translateY(-35rem);
+            -webkit-transform: translateY(-35rem);
+            -moz-transform: translateY(-35rem);
+            -ms-transform: translateY(-35rem);
+            -o-transform: translateY(-35rem);
+        }
+
+        &-title{
+            font-size: 5rem;
+            background-image: $primary-linear-color;
+            color: white;
+            padding: 1rem 3rem;
+            position: absolute;
+            top: 34rem;
+            left: 50%;
+            transform: skewY(-5deg) translateX(-50%);
+            -webkit-transform: skewY(-5deg) translateX(-50%);
+            -moz-transform: skewY(-5deg) translateX(-50%);
+            -ms-transform: skewY(-5deg) translateX(-50%);
+            -o-transform: skewY(-5deg) translateX(-50%);
+        }
+
+        &-servings{
+            height: 15rem;
+            width: 100%;
+            padding: 1rem 10rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &-info{
+                display: flex;
+                flex: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 2rem;
+            }
+
+            &-infoTime, &-infoQty{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+
+            &-icon{
+                margin-left: 2rem;
+            }
+
+            &-addmin{
+                cursor: pointer;
+            }
+
+            &-btn{
+                &-icon{
+                    width: 5rem;
+                    margin-right: 1rem;
+                    fill: $secondry-color;
+                    font-size: 2rem;
+                    background-image: $primary-linear-color;
+                    height: 5rem;
+                    padding: 1rem;
+                    border-radius: 10rem;
+                    -webkit-border-radius: 10rem;
+                    -moz-border-radius: 10rem;
+                    -ms-border-radius: 10rem;
+                    -o-border-radius: 10rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-ingredient{
+            margin-top: 8rem;
+            &-header{
+                font-size: 2.5rem;
+                background: $primary-linear-color;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+
+            &-list{
+                list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: start;
+                width: 70rem;
+                font-size: 2rem;
+                gap: 3rem;
+                padding: 3rem;
+            }
+
+            &-listItem{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-icon{
+                width: 2.5rem;
+                fill: $thrid-color;
+                height: 2.5rem;
+                margin-right: 2rem;
+            }
+        }
+
+        &-howToCook{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            margin-top: 10rem;
+            padding-bottom: 10rem;
+
+            &-header{
+                font-size: 2.5rem;
+                background: $primary-linear-color;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+
+            &-text{
+                font-size: 2rem;
+                color: black;
+                text-align: center;
+                margin-block: 5rem;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            &-btn{
+                background-image: $primary-linear-color;
+                color: white;
+                border: none;
+                padding: 1.5rem 2.5rem;
+                font-size: 2rem;
+                border-radius: 3rem;
+                -webkit-border-radius: 3rem;
+                -moz-border-radius: 3rem;
+                -ms-border-radius: 3rem;
+                -o-border-radius: 3rem;
+}
+        }
+    }
+}

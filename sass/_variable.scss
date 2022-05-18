@@ -1,0 +1,33 @@
+$primary-color: #D4B996;
+$secondry-color: #FEF9EF;
+$thrid-color: #A07855;
+
+$primary-linear-color: linear-gradient(to right, $primary-color, $thrid-color);
+
+$primary-linear-color-2: linear-gradient(to right bottom, rgba($primary-color, .5), rgba($thrid-color, .5));
+
+@mixin respond($breakpoint) {
+    @if($breakpoint==phone) {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+    }
+
+    @if($breakpoint==tab-port) {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+    }
+
+    @if($breakpoint==tab-land) {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+    }
+
+    @if($breakpoint==big-desktop) {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+    }
+}

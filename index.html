@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer type="module" src="./script/controller.js"></script>
+    <title>Forkify</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="./image/logo.png" alt="Logo" class="nav__image" />
+      <form class="nav__searchBar">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="nav__searchBar-input"
+        />
+        <button class="nav__searchBar-btn">
+          <svg class="nav__searchBar-icon">
+            <use href="./image/icons.svg#icon-search"></use>
+            <p>SEARCH</p>
+          </svg>
+        </button>
+      </form>
+      <div class="nav__items">
+        <div class="nav__items-item">
+          <svg class="nav__items-icon">
+            <use href="./image/icons.svg#icon-edit"></use>
+            <p>ADD RECIPE</p>
+          </svg>
+        </div>
+        <div class="nav__items-item">
+          <svg class="nav__items-icon">
+            <use href="./image/icons.svg#icon-bookmark"></use>
+            <p>BOOKMARKS</p>
+          </svg>
+        </div>
+        <div class="nav__items-popup">
+          <div class="body__list-item">
+            <div class="body__list-item-left">
+              <img
+                class="body__list-item-image"
+                src="./image/Chicken makhni pizza.jpeg"
+                alt=""
+              />
+              <div class="body__list-item-text">
+                <h1>Pizza Name</h1>
+                <p>Pizza Description</p>
+              </div>
+            </div>
+            <svg class="body__list-item-icon">
+              <use href="./image/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <div class="body__list-item">
+            <div class="body__list-item-left">
+              <img
+                class="body__list-item-image"
+                src="./image/Chicken makhni pizza.jpeg"
+                alt=""
+              />
+              <div class="body__list-item-text">
+                <h1>Pizza Name</h1>
+                <p>Pizza Description</p>
+              </div>
+            </div>
+            <svg class="body__list-item-icon">
+              <use href="./image/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="body">
+      <div class="body__item">
+        <div class="body__list">
+          <div class="body__list-item">
+            <div class="body__list-item-left">
+              <img
+                class="body__list-item-image"
+                src="./image/Chicken makhni pizza.jpeg"
+                alt=""
+              />
+              <div class="body__list-item-text">
+                <h1>Pizza Name</h1>
+                <p>Pizza Description</p>
+              </div>
+            </div>
+            <svg class="body__list-item-icon">
+              <use href="./image/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="body__pagination">
+          <div class="body__pagination-prev">&#8592; PAGE 1</div>
+          <div class="body__pagination-next">PAGE 3 &#8594;</div>
+        </div>
+      </div>
+      <div class="body__recipe">
+        <div class="body__recipe-imageContainer">
+          <img
+            src="./image/Chicken makhni pizza.jpeg"
+            alt="product image"
+            class="body__recipe-image"
+          />
+        </div>
+        <div class="body__recipe-overlay"></div>
+        <h1 class="body__recipe-title">Temporary Pizza</h1>
+        <div class="body__recipe-servings">
+          <div class="body__recipe-servings-info">
+            <div class="body__recipe-servings-infoTime">
+              <svg class="nav__items-icon">
+                <use href="./image/icons.svg#icon-clock"></use>
+                <p>75 MINUTES</p>
+              </svg>
+            </div>
+            <div class="body__recipe-servings-infoQty">
+              <svg class="nav__items-icon body__recipe-servings-icon">
+                <use href="./image/icons.svg#icon-users"></use>
+                <p>4 SERVINGS</p>
+              </svg>
+              <svg
+                class="nav__items-icon body__recipe-servings-icon body__recipe-servings-addmin"
+              >
+                <use href="./image/icons.svg#icon-minus-circle"></use>
+              </svg>
+              <svg class="nav__items-icon body__recipe-servings-addmin">
+                <use href="./image/icons.svg#icon-plus-circle"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="body__recipe-servings-btn">
+            <svg class="body__recipe-servings-btn-icon">
+              <use href="./image/icons.svg#icon-user"></use>
+            </svg>
+            <svg class="body__recipe-servings-btn-icon">
+              <use href="./image/icons.svg#icon-bookmark"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="body__recipe-ingredient">
+          <h1 class="body__recipe-ingredient-header">RECIPE INGREDIENTS</h1>
+          <ul class="body__recipe-ingredient-list">
+            <li class="body__recipe-ingredient-listItem">
+              <svg class="body__recipe-ingredient-icon">
+                <use href="./image/icons.svg#icon-check"></use>
+                <p>4 Chocolate Powder</p>
+              </svg>
+            </li>
+            <li class="body__recipe-ingredient-listItem">
+              <svg class="body__recipe-ingredient-icon">
+                <use href="./image/icons.svg#icon-check"></use>
+                <p>4 Chocolate Powder</p>
+              </svg>
+            </li>
+            <li class="body__recipe-ingredient-listItem">
+              <svg class="body__recipe-ingredient-icon">
+                <use href="./image/icons.svg#icon-check"></use>
+                <p>4 Chocolate Powder</p>
+              </svg>
+            </li>
+            <li class="body__recipe-ingredient-listItem">
+              <svg class="body__recipe-ingredient-icon">
+                <use href="./image/icons.svg#icon-check"></use>
+                <p>4 Chocolate Powder</p>
+              </svg>
+            </li>
+            <li class="body__recipe-ingredient-listItem">
+              <svg class="body__recipe-ingredient-icon">
+                <use href="./image/icons.svg#icon-check"></use>
+                <p>4 Chocolate Powder</p>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="body__recipe-howToCook">
+          <h1 class="body__recipe-howToCook-header">HOW TO COOK</h1>
+          <p class="body__recipe-howToCook-text">
+            This recipe was carefully designed and tested by
+            <span>Closet Cooking</span>. Please check out directions at their
+            website.
+          </p>
+          <button class="body__recipe-howToCook-btn">Directions &#8594;</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      © Copyright by Jason. Use for learning or your portfolio. Don't use to
+      teach. Don't claim as your own.
+    </footer>
+    <section class="overlay">
+      <form class="overlay__form">
+        <div class="overlay__form-recipeData">
+          <h1 class="overlay__form-recipeData-header">RECIPE DATA</h1>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="title" class="overlay__form-recipeData-label"
+              >Title</label
+            >
+            <input
+              id="title"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="url" class="overlay__form-recipeData-label">Url</label>
+            <input
+              id="url"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="image" class="overlay__form-recipeData-label"
+              >Image Url</label
+            >
+            <input
+              id="image"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="publisher" class="overlay__form-recipeData-label"
+              >Publisher</label
+            >
+            <input
+              id="publisher"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="time" class="overlay__form-recipeData-label"
+              >Prep Time</label
+            >
+            <input
+              id="time"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+          <div class="overlay__form-recipeData-inputField">
+            <label for="servings" class="overlay__form-recipeData-label"
+              >Servings</label
+            >
+            <input
+              id="servings"
+              type="text"
+              class="overlay__form-recipeData-input"
+            />
+          </div>
+        </div>
+        <div class="overlay__form-ingredient">
+          <h1 class="overlay__form-ingredient-header">INGREDIENTS</h1>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec1" class="overlay__form-ingredient-label"
+              >Ingredient 1</label
+            >
+            <input
+              id="rec1"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec2" class="overlay__form-ingredient-label"
+              >Ingredient 2</label
+            >
+            <input
+              id="rec2"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec3" class="overlay__form-ingredient-label"
+              >Ingredient 3</label
+            >
+            <input
+              id="rec3"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec4" class="overlay__form-ingredient-label"
+              >Ingredient 4</label
+            >
+            <input
+              id="rec4"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec5" class="overlay__form-ingredient-label"
+              >Ingredient 5</label
+            >
+            <input
+              id="rec5"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+          <div class="overlay__form-ingredient-inputField">
+            <label for="rec6" class="overlay__form-ingredient-label"
+              >Ingredient 6</label
+            >
+            <input
+              id="rec6"
+              type="text"
+              class="overlay__form-ingredient-input"
+            />
+          </div>
+        </div>
+        <button class="overlay__form-upload">
+          <svg class="overlay__form-upload-icon">
+            <use href="./image/icons.svg#icon-upload-cloud"></use>
+            <p>UPLOAD</p>
+          </svg>
+        </button>
+        <button class="overlay__form-close">X</button>
+      </form>
+    </section>
+  </body>
+</html>
