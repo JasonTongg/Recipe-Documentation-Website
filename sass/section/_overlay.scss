@@ -6,15 +6,15 @@
     left: 0;
     z-index: 10;
     background-image: $primary-linear-color-2;
-    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    // display: flex;
+    display: none;
 
     &__form{
         background-color: white;
         width: 60%;
-        height: 70%;
         border-radius: 2rem;
         -webkit-border-radius: 2rem;
         -moz-border-radius: 2rem;
@@ -25,14 +25,51 @@
         gap: 2rem;
         padding: 3rem;
         position: relative;
+        border: 5px solid $thrid-color;
 
-        &-recipeData,&-ingredient{
+        @media only screen and (max-width: 1350px){
+            width: 70%;
+        }
+
+        @media only screen and (max-width: 1030px){
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 800px){
+            width: 90%;
+            gap: 1rem;
+        }
+
+        @media only screen and (max-width: 700px){
+            grid-template-columns: 100%;
+            align-items: center;
+            align-content: center;
+        }
+
+        @media only screen and (max-width: 420px){
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: 400px){
+            width: 95%;
+        }
+
+        &-recipeData, &-ingredient{
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             width: 100%;
             padding: 2rem 0;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+
+            @media only screen and (max-width: 700px){
+                border: 5px solid $thrid-color-opacity;
+            }
 
             &-header{
                 font-size: 2.5rem;
@@ -41,7 +78,6 @@
                 -webkit-text-fill-color: transparent;
                 text-align: center;
                 margin-bottom: 1rem;
-                // align-self: flex-start;
             }
 
             &-inputField{
@@ -74,7 +110,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 25%;
+            // width: 25%;
             justify-self: center;
             border-radius: 10rem;
             -webkit-border-radius: 10rem;
@@ -84,11 +120,14 @@
             color: $secondry-color;
             align-self: flex-start;
 
+            @media only screen and (max-width: 700px){
+                margin-top: 2rem;
+            }
+
             &-icon{
                 fill: $secondry-color;
                 width: 3rem;
                 height: 3rem;
-                // font-size: 3rem;
                 margin-right: 2rem;
             }
         }
@@ -100,6 +139,20 @@
             top: 3rem;
             right: 3rem;
             font-size: 2rem;
+            background-image: $primary-linear-color;
+            padding: .5rem 1rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 3rem;
+            -webkit-border-radius: 3rem;
+            -moz-border-radius: 3rem;
+            -ms-border-radius: 3rem;
+            -o-border-radius: 3rem;
+
+            @media only screen and (max-width: 700px){
+                top: 2rem;
+                right: 2rem;
+            }
         }
     }
 }

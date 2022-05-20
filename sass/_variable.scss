@@ -2,6 +2,8 @@ $primary-color: #D4B996;
 $secondry-color: #FEF9EF;
 $thrid-color: #A07855;
 
+$thrid-color-opacity: rgba(#A07855, .5);
+
 $primary-linear-color: linear-gradient(to right, $primary-color, $thrid-color);
 
 $primary-linear-color-2: linear-gradient(to right bottom, rgba($primary-color, .5), rgba($thrid-color, .5));

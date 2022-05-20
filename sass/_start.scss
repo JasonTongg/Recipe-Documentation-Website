@@ -26,6 +26,7 @@ body {
     box-sizing: border-box;
     background-color: $secondry-color;
     position: relative;
+    width: 100%;
 
     @include respond(tab-port) {
         padding: 0;

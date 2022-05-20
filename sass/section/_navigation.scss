@@ -5,10 +5,33 @@
     justify-items: center;
     padding: 1rem 3rem 1rem 1rem;
     position: relative;
+    width: 100%;
+
+    @media only screen and (max-width: 1385px){
+        grid-template-columns: 1fr 2.5fr 2fr;
+    }
+
+    @media only screen and (max-width: 1080px){
+        grid-template-columns: 2fr 1.5fr;
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: 850px){
+        grid-template-columns: 3fr 1fr;
+    }
 
     &__image{
         padding: 2rem 4rem;
         width: 60%;
+
+        @media only screen and (max-width: 1385px){
+            padding: 2rem;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 1080px){
+            display: none;
+        }
     }
 
     &__searchBar{
@@ -30,6 +53,14 @@
             -ms-border-radius: 10rem;
             -o-border-radius: 10rem;
             background-color: $secondry-color;
+
+            @media only screen and (max-width: 850px){
+                width: 50rem;
+            }
+
+            @media only screen and (max-width: 620px){
+                width: 100%;
+            }
         }
 
         &-btn{
@@ -52,6 +83,10 @@
             -o-transform: translateX(-5rem);
             background-image: $primary-linear-color;
             cursor: pointer;
+
+            @media only screen and (max-width: 400px){
+                padding: 1rem 3rem;
+            }
         }
 
         &-icon{
@@ -99,14 +134,74 @@
             -o-border-radius: 10rem;
         }
 
+        &-iconP{
+            @media only screen and (max-width: 850px){
+                display: none;
+            }
+        }
+
         &-popup{
             position: absolute;
             top: 100%;
             right: 0;
             width: 35rem;
             background-color: white;
-            z-index: 5;
+            z-index: 100;
             display: none;
+
+            &-item{
+                height: 10rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-inline: 1rem 2rem;
+                flex-direction: row;
+                border: 5px solid $primary-color;
+
+                &-left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                }
+                
+                &-image{
+                    width: 6rem;
+                    margin-right: 2rem;
+                    clip-path: circle(43% at 50% 50%);
+                }
+
+                &-text{
+
+                    h1{
+                        font-size: 3rem;
+                        background: $primary-linear-color;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 1.5rem;
+                        color: rgba(black, .7);
+                        text-align: center;
+                    }
+                }
+
+                &-icon{
+                    width: 3rem;
+                    fill: $secondry-color;
+                    background-image: $primary-linear-color;
+                    height: 3rem;
+                    padding: .5rem;
+                    border-radius: 10rem;
+                    -webkit-border-radius: 10rem;
+                    -moz-border-radius: 10rem;
+                    -ms-border-radius: 10rem;
+                    -o-border-radius: 10rem;
+                    justify-self: flex-end;
+                }
+            }
         }
     }
 }
