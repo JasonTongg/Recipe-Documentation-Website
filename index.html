@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script defer type="module" src="./script/controller.js"></script>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./sass/style.scss" />
+    <script defer src="./script/controller.js"></script>
     <title>Forkify</title>
   </head>
   <body>
@@ -54,6 +55,12 @@
               <use href="./image/icons.svg#icon-user"></use>
             </svg>
           </div>
+        </div>
+      </div>
+    </nav>
+    <section class="body">
+      <div class="body__item">
+        <div class="body__list">
           <!-- <div class="body__list-item">
             <div class="body__list-item-left">
               <img
@@ -69,49 +76,17 @@
             <svg class="body__list-item-icon">
               <use href="./image/icons.svg#icon-user"></use>
             </svg>
-          </div> -->
-        </div>
-      </div>
-    </nav>
-    <section class="body">
-      <div class="body__item">
-        <div class="body__list">
+          </div>  -->
           <div class="body__list-item">
-            <div class="body__list-item-left">
-              <img
-                class="body__list-item-image"
-                src="./image/Chicken makhni pizza.jpeg"
-                alt=""
-              />
-              <div class="body__list-item-text">
-                <h1>Pizza Name</h1>
-                <p>Pizza Description</p>
-              </div>
+            <div class="body__list-item-text">
+              <h1>Please Search in the Searchbar above</h1>
+              <p>Thank you :D</p>
             </div>
-            <svg class="body__list-item-icon">
-              <use href="./image/icons.svg#icon-user"></use>
-            </svg>
-          </div>
-          <div class="body__list-item">
-            <div class="body__list-item-left">
-              <img
-                class="body__list-item-image"
-                src="./image/Chicken makhni pizza.jpeg"
-                alt=""
-              />
-              <div class="body__list-item-text">
-                <h1>Pizza Name</h1>
-                <p>Pizza Description</p>
-              </div>
-            </div>
-            <svg class="body__list-item-icon">
-              <use href="./image/icons.svg#icon-user"></use>
-            </svg>
           </div>
         </div>
         <div class="body__pagination">
-          <div class="body__pagination-prev">&#8592; PAGE 1</div>
-          <div class="body__pagination-next">PAGE 3 &#8594;</div>
+          <!-- <div class="body__pagination-prev">&#8592; PAGE 1</div>
+          <div class="body__pagination-next">PAGE 3 &#8594;</div> -->
         </div>
       </div>
       <div class="body__recipe">
@@ -341,5 +316,7 @@
         <button class="overlay__form-close">X</button>
       </form>
     </section>
+
+    <!-- <script src="./script/controller.js" type="module"></script> -->
   </body>
 </html>
