@@ -322,6 +322,7 @@ let renderBookmark = function(){
     console.log("tes");
     parent.innerHTML = '';
     parent.insertAdjacentHTML("afterbegin", markup);
+    localStorage.setItem('bookmarks', JSON.stringify(state.bookmark));
 }
 
 let ErrorList = function(error){
@@ -354,7 +355,7 @@ let bookmarkListener = function(){
                 sourceUrl: state.recipe.sourceUrl,
                 ingredient: state.recipe.ingredient,
             }]
-            renderBookmark();
+            
         }
     })
 
@@ -501,6 +502,10 @@ let addRecipe = function(){
 }
 
 let init = async function(){
+    const storage = localStorage.getItem('bookmarks');
+    if(storage) state.bookmark = JSON.parse(storage);
+    renderBookmark();
+
     getQuery();
     changePage();
     navBookmarkListener();
