@@ -26,20 +26,26 @@
         </button>
       </form>
       <div class="nav__items">
-        <div class="nav__items-item">
+        <div class="nav__items-item nav__items-addRecipe">
           <svg class="nav__items-icon">
             <use href="./image/icons.svg#icon-edit"></use>
             <p class="nav__items-iconP">ADD RECIPE</p>
           </svg>
         </div>
-        <div class="nav__items-item">
+        <div class="nav__items-item nav__items-bookmark">
           <svg class="nav__items-icon">
             <use href="./image/icons.svg#icon-bookmark"></use>
             <p class="nav__items-iconP">BOOKMARKS</p>
           </svg>
         </div>
-        <div class="nav__items-popup">
-          <div class="nav__items-popup-item">
+        <div class="nav__items-popup hidden">
+          <div class="body__list-item">
+            <div class="body__list-item-text">
+              <h1>Bookmark is Empty!!</h1>
+              <p>Mark some recipe</p>
+            </div>
+          </div>
+          <!-- <div class="nav__items-popup-item">
             <div class="nav__items-popup-item-left">
               <img
                 class="nav__items-popup-item-image"
@@ -54,7 +60,7 @@
             <svg class="nav__items-popup-item-icon">
               <use href="./image/icons.svg#icon-user"></use>
             </svg>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -90,7 +96,7 @@
         </div>
       </div>
       <div class="body__recipe">
-        <div class="body__recipe-imageContainer">
+        <!-- <div class="body__recipe-imageContainer">
           <img
             src="./image/Chicken makhni pizza.jpeg"
             alt="product image"
@@ -174,6 +180,12 @@
             website.
           </p>
           <button class="body__recipe-howToCook-btn">Directions &#8594;</button>
+        </div> -->
+        <div class="body__list-item">
+          <div class="body__list-item-text">
+            <h1>Please Select Recipe to Display</h1>
+            <p>Thank you :D</p>
+          </div>
         </div>
       </div>
     </section>
@@ -181,7 +193,7 @@
       © Copyright by Jason. Use for learning or your portfolio. Don't use to
       teach. Don't claim as your own.
     </footer>
-    <section class="overlay">
+    <section class="overlay hidden">
       <form class="overlay__form">
         <div class="overlay__form-recipeData">
           <h1 class="overlay__form-recipeData-header">RECIPE DATA</h1>
@@ -193,6 +205,8 @@
               id="title"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="Avocado Pizza"
             />
           </div>
           <div class="overlay__form-recipeData-inputField">
@@ -201,6 +215,8 @@
               id="url"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="URLLLLLLLL"
             />
           </div>
           <div class="overlay__form-recipeData-inputField">
@@ -211,6 +227,8 @@
               id="image"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="imageeee"
             />
           </div>
           <div class="overlay__form-recipeData-inputField">
@@ -221,6 +239,8 @@
               id="publisher"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="Jason"
             />
           </div>
           <div class="overlay__form-recipeData-inputField">
@@ -231,6 +251,8 @@
               id="time"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="10"
             />
           </div>
           <div class="overlay__form-recipeData-inputField">
@@ -241,6 +263,8 @@
               id="servings"
               type="text"
               class="overlay__form-recipeData-input"
+              required
+              value="4"
             />
           </div>
         </div>
@@ -254,6 +278,8 @@
               id="rec1"
               type="text"
               class="overlay__form-ingredient-input"
+              required
+              value="1;;Avocado"
             />
           </div>
           <div class="overlay__form-ingredient-inputField">
@@ -264,6 +290,8 @@
               id="rec2"
               type="text"
               class="overlay__form-ingredient-input"
+              required
+              value="1;;sauce"
             />
           </div>
           <div class="overlay__form-ingredient-inputField">

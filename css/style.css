@@ -252,10 +252,9 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
-  width: 35rem;
   background-color: white;
   z-index: 100;
-  display: none;
+  cursor: pointer;
 }
 
 .nav__items-popup-item {
@@ -301,18 +300,16 @@ body {
 }
 
 .nav__items-popup-item-text h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#D4B996), to(#A07855));
   background: linear-gradient(to right, #D4B996, #A07855);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
 }
 
 .nav__items-popup-item-text p {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.7);
-  text-align: center;
 }
 
 .nav__items-popup-item-icon {
@@ -328,6 +325,10 @@ body {
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
   justify-self: flex-end;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @-webkit-keyframes putar {
@@ -618,6 +619,7 @@ body {
 .body__recipe-imageContainer {
   overflow: hidden;
   height: 40rem;
+  width: 100%;
 }
 
 .body__recipe-overlay {
@@ -632,11 +634,6 @@ body {
 
 .body__recipe-image {
   width: 100%;
-  transform: translateY(-35rem);
-  -webkit-transform: translateY(-35rem);
-  -moz-transform: translateY(-35rem);
-  -ms-transform: translateY(-35rem);
-  -o-transform: translateY(-35rem);
 }
 
 .body__recipe-title {
@@ -963,7 +960,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .overlay__form {

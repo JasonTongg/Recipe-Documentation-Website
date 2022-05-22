@@ -144,10 +144,9 @@
             position: absolute;
             top: 100%;
             right: 0;
-            width: 35rem;
             background-color: white;
             z-index: 100;
-            display: none;
+            cursor: pointer;
 
             &-item{
                 height: 10rem;
@@ -174,17 +173,15 @@
                 &-text{
 
                     h1{
-                        font-size: 3rem;
+                        font-size: 2rem;
                         background: $primary-linear-color;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
-                        text-align: center;
                     }
 
                     p{
                         font-size: 1.5rem;
                         color: rgba(black, .7);
-                        text-align: center;
                     }
                 }
 
@@ -204,4 +201,8 @@
             }
         }
     }
+}
+
+.hidden{
+    display: none !important;
 }

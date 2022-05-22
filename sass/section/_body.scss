@@ -176,7 +176,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-
+        
         @media only screen and (max-width: 600px){
             width: 100vw;
         }
@@ -185,6 +185,7 @@
         &-imageContainer{
             overflow: hidden;
             height: 40rem;
+            width: 100%;
         }
 
         &-overlay{
@@ -198,11 +199,6 @@
 
         &-image{
             width: 100%;
-            transform: translateY(-35rem);
-            -webkit-transform: translateY(-35rem);
-            -moz-transform: translateY(-35rem);
-            -ms-transform: translateY(-35rem);
-            -o-transform: translateY(-35rem);
         }
 
         &-title{
