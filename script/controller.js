@@ -1,3 +1,5 @@
+import icons from '../image/icons.svg'
+
 const state = {
     list: [],
     page: 1,
@@ -219,28 +221,28 @@ let renderRecipe = function(){
           <div class="body__recipe-servings-info">
             <div class="body__recipe-servings-infoTime">
               <svg class="nav__items-icon">
-                <use href="../image/icons.svg#icon-clock"></use>
+                <use href="${icons}#icon-clock"></use>
                 <p>${state.recipe.cookingTime} MINUTES</p>
               </svg>
             </div>
             <div class="body__recipe-servings-infoQty">
               <svg class="nav__items-icon body__recipe-servings-icon">
-                <use href="./image/icons.svg#icon-users"></use>
+                <use href="${icons}#icon-users"></use>
                 <p>${state.recipe.servings} SERVINGS</p>
               </svg>
               <svg
                 class="nav__items-icon body__recipe-servings-icon body__recipe-servings-addmin min"
               >
-                <use href="./image/icons.svg#icon-minus-circle"></use>
+                <use href="${icons}#icon-minus-circle"></use>
               </svg>
               <svg class="nav__items-icon body__recipe-servings-addmin max">
-                <use href="./image/icons.svg#icon-plus-circle"></use>
+                <use href="${icons}#icon-plus-circle"></use>
               </svg>
             </div>
           </div>
           <div class="body__recipe-servings-btn">
             <svg class="body__recipe-servings-btn-icon bookmark">
-              <use href="./image/icons.svg#icon-bookmark"></use>
+              <use href="${icons}#icon-bookmark"></use>
             </svg>
           </div>
         </div>
@@ -252,7 +254,7 @@ let renderRecipe = function(){
             markup+=`
             <li class="body__recipe-ingredient-listItem">
               <svg class="body__recipe-ingredient-icon">
-                <use href="./image/icons.svg#icon-check"></use>
+                <use href="${icons}#icon-check"></use>
                 <p>${state.recipe.ingredient[index].quantity} ${state.recipe.ingredient[index].description}</p>
               </svg>
             </li>
